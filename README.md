@@ -173,6 +173,8 @@ PY
 
 ## Các Giai Đoạn Của Lab
 
+Hướng dẫn thực hành cho nhóm 4 người: [Checkpoint 2 — chuẩn bị và kiểm tra dữ liệu](docs/CHECKPOINT_2.md).
+
 | Giai Đoạn | Hoạt Động |
 |-----------|-----------|
 | Chuẩn bị tài liệu | Nhóm chọn chủ đề, thu thập tài liệu, chuyển sang định dạng .md/.txt |

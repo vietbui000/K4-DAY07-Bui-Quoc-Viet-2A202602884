@@ -1,0 +1,67 @@
+[
+  {
+    "doc_id": "lazada-buyer-return",
+    "source_url": "https://www.lazada.vn/helpcenter/chinh-sach-tra-hang-hoan-tien-lazada.html",
+    "checked_at": "2026-09-20",
+    "status": "user_confirmed_source",
+    "reason": "Web tool could not retrieve source content; this does not prove the URL is invalid.",
+    "claimed_document_version": "3.0",
+    "sha256": "3700bd3b07b90e7ade3d05aacadfeab9f625ca73a800a9a5c820a81fd8356579",
+    "previous_tool_status": "unverified",
+    "confirmed_by": "Bui Quoc Viet (user)",
+    "confirmation": "User stated: toi da xac nhan nguon la dung",
+    "independently_verified_by_assistant": false
+  },
+  {
+    "doc_id": "lazada-seller-return-process",
+    "source_url": "https://university.lazada.vn/course/view.htm?id=1204",
+    "checked_at": "2026-09-20",
+    "status": "user_confirmed_source",
+    "reason": "Web tool could not retrieve source content; this does not prove the URL is invalid.",
+    "claimed_document_version": "2.1",
+    "sha256": "f96e4aeeda426d6cc9d838ae2546613318113a7408c8b928069c3d7818cd319c",
+    "previous_tool_status": "unverified",
+    "confirmed_by": "Bui Quoc Viet (user)",
+    "confirmation": "User stated: toi da xac nhan nguon la dung",
+    "independently_verified_by_assistant": false
+  },
+  {
+    "doc_id": "lazada-electronic-warranty",
+    "source_url": "https://www.lazada.vn/helpcenter/huong-dan-bao-hanh-san-pham.html",
+    "checked_at": "2026-09-20",
+    "status": "user_confirmed_source",
+    "reason": "Web tool could not retrieve source content; this does not prove the URL is invalid.",
+    "claimed_document_version": "1.5",
+    "sha256": "711fd2d00e50ea68a08afc42fc2a8f59b8fe027b5fb2149edb8bc827eeea395f",
+    "previous_tool_status": "unverified",
+    "confirmed_by": "Bui Quoc Viet (user)",
+    "confirmation": "User stated: toi da xac nhan nguon la dung",
+    "independently_verified_by_assistant": false
+  },
+  {
+    "doc_id": "lazada-buyer-protection-claim",
+    "source_url": "https://www.lazada.vn/helpcenter/cam-ket-hang-chinh-hang-lazmall.html",
+    "checked_at": "2026-09-20",
+    "status": "user_confirmed_source",
+    "reason": "Web tool could not retrieve source content; this does not prove the URL is invalid.",
+    "claimed_document_version": "2.0",
+    "sha256": "0708603d940f4c723bfebb05b2fd7114eb8581c5ecc6a9adee1a9a05b468280b",
+    "previous_tool_status": "unverified",
+    "confirmed_by": "Bui Quoc Viet (user)",
+    "confirmation": "User stated: toi da xac nhan nguon la dung",
+    "independently_verified_by_assistant": false
+  },
+  {
+    "doc_id": "lazada-seller-fee-and-claim",
+    "source_url": "https://university.lazada.vn/course/view.htm?id=3055",
+    "checked_at": "2026-09-20",
+    "status": "user_confirmed_source",
+    "reason": "Web tool could not retrieve source content; this does not prove the URL is invalid.",
+    "claimed_document_version": "4.0",
+    "sha256": "5dfe27f446e2e7f36ff7b541dbfb8d974dc712827606177408ea96f01feda942",
+    "previous_tool_status": "unverified",
+    "confirmed_by": "Bui Quoc Viet (user)",
+    "confirmation": "User stated: toi da xac nhan nguon la dung",
+    "independently_verified_by_assistant": false
+  }
+]

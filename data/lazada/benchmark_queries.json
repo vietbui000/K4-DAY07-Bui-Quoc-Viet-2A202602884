@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "query": "Thời hạn trả hàng của sản phẩm LazMall là bao lâu?",
+    "filter": null,
+    "gold_answer": "1. Người mua trên gian hàng LazMall có quyền yêu cầu trả hàng và hoàn tiền trong vòng 30 ngày kể từ ngày giao hàng thành công.",
+    "evidence": [
+      {
+        "doc_id": "lazada-buyer-return",
+        "heading": "Điều 1: Điều kiện và Thời hạn Trả hàng",
+        "quote": "1. Người mua trên gian hàng LazMall có quyền yêu cầu trả hàng và hoàn tiền trong vòng **30 ngày** kể từ ngày giao hàng thành công.",
+        "source_url": "https://www.lazada.vn/helpcenter/chinh-sach-tra-hang-hoan-tien-lazada.html",
+        "sha256": "3700bd3b07b90e7ade3d05aacadfeab9f625ca73a800a9a5c820a81fd8356579"
+      }
+    ],
+    "verification_status": "user_confirmed_source"
+  },
+  {
+    "id": 2,
+    "query": "Thời gian và quy trình xử lý hoàn tiền cho người mua như thế nào?",
+    "filter": {
+      "audience": "buyer"
+    },
+    "gold_answer": "1. Sau khi yêu cầu trả hàng được phê duyệt và đơn vị vận chuyển thu hồi hàng thành công, Lazada sẽ tiến hành hoàn tiền vào Ví LazadaPay hoặc tài khoản ngân hàng trong vòng 03 - 05 ngày làm việc.\n2. Đối với thanh toán qua thẻ tín dụng, thời gian hoàn tiền phụ thuộc vào ngân hàng phát hành (từ 07 - 14 ngày làm việc).",
+    "evidence": [
+      {
+        "doc_id": "lazada-buyer-return",
+        "heading": "Điều 2: Quy trình Hoàn tiền",
+        "quote": "1. Sau khi yêu cầu trả hàng được phê duyệt và đơn vị vận chuyển thu hồi hàng thành công, Lazada sẽ tiến hành hoàn tiền vào Ví LazadaPay hoặc tài khoản ngân hàng trong vòng **03 - 05 ngày làm việc**.\n2. Đối với thanh toán qua thẻ tín dụng, thời gian hoàn tiền phụ thuộc vào ngân hàng phát hành (từ **07 - 14 ngày làm việc**).",
+        "source_url": "https://www.lazada.vn/helpcenter/chinh-sach-tra-hang-hoan-tien-lazada.html",
+        "sha256": "3700bd3b07b90e7ade3d05aacadfeab9f625ca73a800a9a5c820a81fd8356579"
+      }
+    ],
+    "verification_status": "user_confirmed_source"
+  },
+  {
+    "id": 3,
+    "query": "Nhà bán hàng có bao nhiêu ngày để mở khiếu nại khi nhận hàng hoàn bị hư hỏng?",
+    "filter": {
+      "audience": "seller"
+    },
+    "gold_answer": "1. Nhà Bán Hàng có thời hạn 03 ngày làm việc kể từ khi nhận lại hàng hoàn để mở khiếu nại trên Trung tâm Hỗ trợ Nhà Bán Hàng (PSC) nếu hàng hoàn bị biến dạng hoặc tráo đổi.",
+    "evidence": [
+      {
+        "doc_id": "lazada-seller-return-process",
+        "heading": "Điều 2: Thời hạn Khiếu nại Hàng Hoàn bị Thất lạc hoặc Hư hỏng",
+        "quote": "1. Nhà Bán Hàng có thời hạn **03 ngày làm việc** kể từ khi nhận lại hàng hoàn để mở khiếu nại trên Trung tâm Hỗ trợ Nhà Bán Hàng (PSC) nếu hàng hoàn bị biến dạng hoặc tráo đổi.",
+        "source_url": "https://university.lazada.vn/course/view.htm?id=1204",
+        "sha256": "f96e4aeeda426d6cc9d838ae2546613318113a7408c8b928069c3d7818cd319c"
+      }
+    ],
+    "verification_status": "user_confirmed_source"
+  },
+  {
+    "id": 4,
+    "query": "Sản phẩm điện tử mua trên Lazada có các hình thức bảo hành nào?",
+    "filter": null,
+    "gold_answer": "2. Hình thức bảo hành áp dụng bao gồm: Bảo hành qua Số điện thoại/IMEI, Bảo hành qua Phiếu bảo hành kèm theo, hoặc Bảo hành điện tử kích hoạt qua ứng dụng nhà sản xuất.",
+    "evidence": [
+      {
+        "doc_id": "lazada-electronic-warranty",
+        "heading": "Điều 1: Phạm vi và Hình thức Bảo hành",
+        "quote": "2. Hình thức bảo hành áp dụng bao gồm: Bảo hành qua Số điện thoại/IMEI, Bảo hành qua Phiếu bảo hành kèm theo, hoặc Bảo hành điện tử kích hoạt qua ứng dụng nhà sản xuất.",
+        "source_url": "https://www.lazada.vn/helpcenter/huong-dan-bao-hanh-san-pham.html",
+        "sha256": "711fd2d00e50ea68a08afc42fc2a8f59b8fe027b5fb2149edb8bc827eeea395f"
+      }
+    ],
+    "verification_status": "user_confirmed_source"
+  },
+  {
+    "id": 5,
+    "query": "Chính sách đền bù của Lazada khi sản phẩm LazMall bị phát hiện là hàng giả?",
+    "filter": {
+      "audience": "buyer"
+    },
+    "gold_answer": "2. Nếu Người Mua phát hiện và chứng minh được sản phẩm LazMall mua là hàng giả/hàng nhái, Lazada áp dụng chính sách Đền tiền gấp 2 lần (200% giá trị sản phẩm).",
+    "evidence": [
+      {
+        "doc_id": "lazada-buyer-protection-claim",
+        "heading": "Điều 1: Cam kết Hàng Chính hãng 100% trên LazMall",
+        "quote": "2. Nếu Người Mua phát hiện và chứng minh được sản phẩm LazMall mua là hàng giả/hàng nhái, Lazada áp dụng chính sách **Đền tiền gấp 2 lần** (200% giá trị sản phẩm).",
+        "source_url": "https://www.lazada.vn/helpcenter/cam-ket-hang-chinh-hang-lazmall.html",
+        "sha256": "0708603d940f4c723bfebb05b2fd7114eb8581c5ecc6a9adee1a9a05b468280b"
+      }
+    ],
+    "verification_status": "user_confirmed_source"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "backend": "MockEmbedder (hash-based, not semantic)",
+  "results": [
+    {
+      "a": "Người mua yêu cầu hoàn tiền.",
+      "b": "Người mua yêu cầu hoàn tiền.",
+      "prediction": "cao",
+      "score": 1.0
+    },
+    {
+      "a": "Tôi muốn trả lại sản phẩm bị lỗi.",
+      "b": "Tôi cần đổi trả món hàng bị hỏng.",
+      "prediction": "cao",
+      "score": 0.09236204891235099
+    },
+    {
+      "a": "Người bán tiếp nhận yêu cầu bảo hành.",
+      "b": "Cửa hàng xử lý đề nghị sửa chữa theo bảo hành.",
+      "prediction": "cao",
+      "score": 0.14693148380423043
+    },
+    {
+      "a": "Người mua yêu cầu hoàn tiền.",
+      "b": "Hôm nay trời có mưa lớn.",
+      "prediction": "thấp",
+      "score": -0.07755277135075599
+    },
+    {
+      "a": "Sản phẩm cần còn nguyên tem để đổi trả.",
+      "b": "Đội bóng đã giành chiến thắng trong trận chung kết.",
+      "prediction": "thấp",
+      "score": 0.05936782005722416
+    }
+  ]
+}

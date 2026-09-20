@@ -1,0 +1,7 @@
+[
+  {"a": "Người mua yêu cầu hoàn tiền.", "b": "Người mua yêu cầu hoàn tiền.", "prediction": "cao"},
+  {"a": "Tôi muốn trả lại sản phẩm bị lỗi.", "b": "Tôi cần đổi trả món hàng bị hỏng.", "prediction": "cao"},
+  {"a": "Người bán tiếp nhận yêu cầu bảo hành.", "b": "Cửa hàng xử lý đề nghị sửa chữa theo bảo hành.", "prediction": "cao"},
+  {"a": "Người mua yêu cầu hoàn tiền.", "b": "Hôm nay trời có mưa lớn.", "prediction": "thấp"},
+  {"a": "Sản phẩm cần còn nguyên tem để đổi trả.", "b": "Đội bóng đã giành chiến thắng trong trận chung kết.", "prediction": "thấp"}
+]

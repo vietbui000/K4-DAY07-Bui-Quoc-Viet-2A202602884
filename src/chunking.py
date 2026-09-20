@@ -47,8 +47,9 @@ class SentenceChunker:
         self.max_sentences_per_chunk = max(1, max_sentences_per_chunk)
 
     def chunk(self, text: str) -> list[str]:
-        # TODO: split into sentences, group into chunks
-        raise NotImplementedError("Implement SentenceChunker.chunk")
+        sentences = [part.strip() for part in re.split(r'(?<=[.!?])\s+', text.strip()) if part.strip()]
+        size = self.max_sentences_per_chunk
+        return [' '.join(sentences[i:i + size]) for i in range(0, len(sentences), size)]
 
 
 class RecursiveChunker:
@@ -66,12 +67,36 @@ class RecursiveChunker:
         self.chunk_size = chunk_size
 
     def chunk(self, text: str) -> list[str]:
-        # TODO: implement recursive splitting strategy
-        raise NotImplementedError("Implement RecursiveChunker.chunk")
+        if self.chunk_size <= 0:
+            raise ValueError('chunk_size must be positive')
+        return self._split(text, self.separators) if text else []
 
     def _split(self, current_text: str, remaining_separators: list[str]) -> list[str]:
-        # TODO: recursive helper used by RecursiveChunker.chunk
-        raise NotImplementedError("Implement RecursiveChunker._split")
+        if len(current_text) <= self.chunk_size:
+            return [current_text] if current_text else []
+        if not remaining_separators or remaining_separators[0] == '':
+            return [current_text[i:i + self.chunk_size]
+                    for i in range(0, len(current_text), self.chunk_size)]
+        separator, *rest = remaining_separators
+        # Keep separators so punctuation and paragraph boundaries are not lost.
+        pieces = current_text.split(separator)
+        pieces = [piece + separator if i < len(pieces) - 1 else piece
+                  for i, piece in enumerate(pieces)]
+        chunks, pending = [], ''
+        for piece in pieces:
+            if len(piece) > self.chunk_size:
+                if pending:
+                    chunks.append(pending)
+                    pending = ''
+                chunks.extend(self._split(piece, rest))
+            elif len(pending) + len(piece) <= self.chunk_size:
+                pending += piece
+            else:
+                chunks.append(pending)
+                pending = piece
+        if pending:
+            chunks.append(pending)
+        return chunks
 
 
 def _dot(a: list[float], b: list[float]) -> float:
@@ -86,13 +111,30 @@ def compute_similarity(vec_a: list[float], vec_b: list[float]) -> float:
 
     Returns 0.0 if either vector has zero magnitude.
     """
-    # TODO: implement cosine similarity formula
-    raise NotImplementedError("Implement compute_similarity")
+    if len(vec_a) != len(vec_b):
+        raise ValueError('Vectors must have the same dimension')
+    norm_a, norm_b = math.hypot(*vec_a), math.hypot(*vec_b)
+    if norm_a == 0 or norm_b == 0:
+        return 0.0
+    score = sum((a / norm_a) * (b / norm_b) for a, b in zip(vec_a, vec_b))
+    return max(-1.0, min(1.0, score))
 
 
 class ChunkingStrategyComparator:
     """Run all built-in chunking strategies and compare their results."""
 
     def compare(self, text: str, chunk_size: int = 200) -> dict:
-        # TODO: call each chunker, compute stats, return comparison dict
-        raise NotImplementedError("Implement ChunkingStrategyComparator.compare")
+        if chunk_size <= 0:
+            raise ValueError('chunk_size must be positive')
+        strategies = {
+            'fixed_size': FixedSizeChunker(chunk_size, overlap=min(50, chunk_size - 1)),
+            'by_sentences': SentenceChunker(),
+            'recursive': RecursiveChunker(chunk_size=chunk_size),
+        }
+        result = {}
+        for name, chunker in strategies.items():
+            chunks = chunker.chunk(text)
+            result[name] = {'count': len(chunks),
+                            'avg_length': sum(map(len, chunks)) / len(chunks) if chunks else 0.0,
+                            'chunks': chunks}
+        return result
